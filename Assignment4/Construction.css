@@ -1,0 +1,126 @@
+body {
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  background-image: linear-gradient(45deg, rgba(204,181,255,1) 0%, rgba(51,207,255,1) 100%);
+  text-align: center;
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  padding: 24px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+  box-shadow: -7px 7px 7px 0px rgba(0,0,0,0.65);
+}
+
+header {
+  grid-column: span 12;
+  margin-bottom: 10px;
+}
+
+main {
+  grid-column: span 12;
+}
+
+footer {
+  grid-column: span 12;
+  margin: 30px 0px 20px 0px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+#H {
+  animation: cfade 1.5s;
+}
+
+#E {
+  animation: cfade 1.75s;
+}
+
+#L1 {
+  animation: cfade 2.0s;
+}
+
+#L2 {
+  animation: cfade 2.25s;
+}
+
+#O {
+  animation: cfade 2.50s;
+}
+
+#Ex {
+  animation: cfade 2.75s;
+}
+
+@keyframes cfade {
+  0%   { transform: translate(0, -200px);}
+  100% { transform: translate(0, 0);}
+}
+
+#LogoSvg {
+  width:500px;
+}
+
+#_1 {
+  animation: tfade 2.0s;
+  transform-origin: bottom left;
+}
+
+#_2 {
+  animation: tfade 2.25s;
+  transform-origin: top right;
+}
+
+#_3 {
+  animation: tfade 2.50s;
+  transform-origin: bottom left;
+}
+
+#_4 {
+  animation: tfade 2.25s;
+  transform-origin: bottom left;
+}
+
+#_5 {
+  animation: tfade 2.0s;
+  transform-origin: top right;
+}
+
+#_6 {
+  animation: tfade 1.75s;
+  transform-origin: center left;
+}
+
+#_7 {
+  animation: tfade 1.50s;
+  transform-origin: top center;
+}
+
+#_8 {
+  animation: tfade 1.75s;
+  transform-origin: bottom left;
+}
+
+#_9 {
+  animation: tfade 2.0s;
+  transform-origin: center;
+}
+
+#_10 {
+  animation: tfade 2.25s;
+  transform-origin: center;
+}
+
+#_11 {
+  animation: tfade 2.50s;
+  transform-origin: center;
+}
+
+@keyframes tfade {
+  0%   { transform: rotate(180deg);}
+  100% { transform: rotate(0deg);}
+}
