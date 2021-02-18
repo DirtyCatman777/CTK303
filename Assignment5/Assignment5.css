@@ -1,0 +1,81 @@
+body {
+  font-family: 'Poiret One', cursive;
+  background-image: linear-gradient(45deg, rgba(204, 181, 255, 1) 0%, rgba(51, 207, 255, 1) 100%);
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  font-size: 2em;
+  margin: 0 0 1em 0;
+  padding: .5em;
+  border-bottom: 1px solid white;
+}
+
+#logo {
+  width: 100%;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin: 0em;
+}
+
+nav a {
+  color: #33ccff;
+  font-family: 'Poiret One', cursive;
+  border: 1px solid #ffccee;
+  background-color: white;
+  border-radius: .5em;
+  padding: 1em;
+}
+
+h2 {
+  font-family: 'Poiret One', cursive;
+  color: white;
+  margin: 0;
+  padding: .25em 0 .25em 0;
+  border-bottom: 1px solid white;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin-bottom: 1em;
+}
+
+footer {
+  font-family: 'Poiret One', cursive;
+  background-color: white;
+  color: #33ccff;
+  padding: .5em;
+  text-align: center;
+}
+
+@media all and (min-width: 20em){
+  h1 { color: black; }
+}
+
+@media all and (min-width: 40em){
+  h1 { color: green; font-size: 2em; }
+  main { grid-template-columns: repeat(2,1fr); }
+}
+
+@media all and (min-width: 65em){
+  h1 { color: white; font-size: 3em;}
+  main { grid-column-gap: 2em; grid-row-gap: 2em; margin-bottom: 1em;}
+  nav {grid-template-columns: repeat(2,1fr);}
+  #logo { width: 70%;}
+  footer {font-size: 1.5em;}
+  body { max-width: 1080px; margin: 0em auto; }
+}
